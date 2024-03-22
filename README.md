@@ -7,5 +7,10 @@ CC4 Internship 2024 Div Tech Assessment
 
 ## Task 1: Part 1
 This task requires the file "Country-Code.xlsx". It returns a "restaurants.csv" file.
-### Assumptions:
+### Assumptions/Interpretations:
 - Entries with invalid country ID can be ignored because the localities are noted as "Dummy", which implies a dummy entry.
+
+## Task 1: Part 2
+This task requires the file for the first task, 'Task1Part1.py'. It returns a "restaurant_events.csv" file that contains the information of all events that happened in April 2019.
+### Assumptions/Interpretations: 
+- Any event with start date in April 2019 will be added, regardless of end date.
