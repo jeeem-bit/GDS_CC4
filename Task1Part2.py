@@ -42,3 +42,9 @@ with open('restaurant_events.csv', 'w', newline='', encoding='utf-8') as csvfile
                                          'Event End Date': end})
                         
 csvfile.close()
+
+if __name__ == 'main':
+    if os.path.isfile('restaurant_events.csv'):
+        print("Task 1 Part 2 Completed.\n restaurant_events.csv file has been generated.")
+    else:
+        print("Error.")
