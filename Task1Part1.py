@@ -47,8 +47,7 @@ with open('restaurants.csv', 'w', newline='', encoding='utf-8') as csvfile:
 
 csvfile.close()
 
-if __name__ == 'main':
-    if os.path.isfile('restaurants.csv'):
-        print("Task 1 Part 1 Completed.\n restaurants.csv file has been generated.")
-    else:
-        print("Error.")
+if os.path.isfile('restaurants.csv'):
+    print("Task 1 Part 1 Completed.\nrestaurants.csv file has been generated.")
+else:
+    print("Error.")
