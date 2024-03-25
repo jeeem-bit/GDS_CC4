@@ -9,7 +9,6 @@ CC4 Internship 2024 Div Tech Assessment
 - Download "Task1Part1.py", "Task1Part2.py", "Task1Part3.py" and "Country-Code.xlsx" and save into a folder.
 - Navigate to the folder in command prompt/terminal with 'cd ../folder_name'
 - Run each task with 'python Task1Part1.py', 'python Task1Part2.py' or 'python Task1Part3.py' respectively. Note that Task1Part1 should be run first before the other two tasks.
-- 'Task 1 Part X completed.' will be returned upon successfully running the code.
 
 ## Task 1: Part 1
 This task requires the file "Country-Code.xlsx". It returns a "restaurants.csv" file.
