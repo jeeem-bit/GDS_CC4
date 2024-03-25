@@ -3,6 +3,7 @@ import requests, json, csv, os
 from datetime import datetime   
 import Task1Part1
 
+
 # Read data
 url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
 data = json.loads(requests.get(url).text)
@@ -43,8 +44,8 @@ with open('restaurant_events.csv', 'w', newline='', encoding='utf-8') as csvfile
                         
 csvfile.close()
 
-
-if os.path.isfile('restaurant_events.csv'):
-    print("Task 1 Part 2 Completed.\nrestaurant_events.csv file has been generated.")
-else:
-    print("Error.")
+if __name__ == "__main__":
+    if os.path.isfile('restaurant_events.csv'):
+        print("Task 1 Part 2 Completed.\nrestaurant_events.csv file has been generated.")
+    else:
+        print("Error.")

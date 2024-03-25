@@ -46,8 +46,9 @@ with open('restaurants.csv', 'w', newline='', encoding='utf-8') as csvfile:
                 writer.writerow({'Restaurant Id': id, 'Restaurant Name': name, 'Country': country_ids[int(country)], 'City': city, 'User Rating Votes':urv, 'User Aggregate Rating': uar, 'Cuisines': cuisines})
 
 csvfile.close()
-
-if os.path.isfile('restaurants.csv'):
-    print("Task 1 Part 1 Completed.\nrestaurants.csv file has been generated.")
-else:
-    print("Error.")
+    
+if __name__ == "__main__":
+    if os.path.isfile('restaurants.csv'):
+        print("Task 1 Part 1 Completed.\nrestaurants.csv file has been generated.")
+    else:
+        print("Error.")

@@ -1,5 +1,6 @@
 import Task1Part1
 import json
+print_msg = False
 
 threshold = {'Excellent': -1.0,
           'Very Good': -1.0,
@@ -17,6 +18,7 @@ for restaurant in Task1Part1.restaurants:
         elif res_grade < threshold[res_grade_text]:
             threshold[res_grade_text] = res_grade
 
-print("Task 1 Part 3 Completed (Threshold Values)")
-for key, value in threshold.items():
-    print(f"{key}: {value:.1f}")
+if __name__ == "__main__":
+    print("Task 1 Part 3 Completed (Threshold Values)")
+    for key, value in threshold.items():
+        print(f"{key}: {value:.1f}")
